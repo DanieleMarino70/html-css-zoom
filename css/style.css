@@ -40,7 +40,8 @@ main{
     left: 0;
     bottom: 0.2rem;
     font-size: 0.9rem;
-    backdrop-filter: blur(5px) grayscale(1);
+    background-color: rgba(100, 100, 100, 0.5);
+    backdrop-filter: blur(5px);
 
     height: 1.5rem;
     line-height: 1.5rem;
@@ -55,6 +56,34 @@ main{
     height: 70px;
     background-color: #232323;
     justify-content: space-between;
-
+    align-items: center;
+    text-align: center;
+}
+.footer-main  > * > *{
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
 }
 
+.footer-main span{
+    font-size: 1rem;
+}
+
+.audio-video-bar,
+.footer-main-bar{
+    align-items: center;
+}
+
+.end-meeting-bar{
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 8rem;
+    color: red;
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+.end-meeting-bar:hover{
+    filter: brightness(2);
+    backdrop-filter: grayscale(1);  
+}
